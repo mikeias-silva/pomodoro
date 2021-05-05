@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+   @apply border bg-green-800 border-gray-200 rounded-lg; 
+  width: 18rem;
+}
+
+.card-body {
+  @apply m-4;
+}
+
+.card-title {
+  @apply font-medium text-2xl;
+}
+
+.cart-text {
+  @apply text-base text-gray-500;
+}
+
+.btn {
+  @apply my-2 p-3 rounded inline-block;
+}
+
+.btn-primary {
+  @apply duration-700 bg-blue-600 text-white;
+}
+
+.btn-primary:hover {
+  @apply bg-blue-800;
+}
+
+@media screen and (max-width: 720px) {
+  .responsivo {
+    @apply flex md:inline-flex justify-center space-x-5 mt-3;
+  }
+}
