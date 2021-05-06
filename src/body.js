@@ -546,7 +546,7 @@ function submit(){
                                     <h2 className="font-medium text-xl">Tempo de pausa</h2>
                                     <h2 className="text-xl m-2 text-green-500">{breakLength+":00"}</h2>
                                     <button className="text-xl pr-2 pl-2 mr-2 bg-green-400 text-white rounded" onClick={adicionaBreake}>+</button>
-                                    <button  onClick={decrementaBreake} className="bg-yellow-300 text-white text-xl pr-2 pl-2 rounded">-</button>
+                                    <button  onClick={decrementaBreake} className="bg-green-700 text-white text-xl pr-2 pl-2 rounded">-</button>
                                 </div>
                             </div>
                             <div className="flex justify-center">
@@ -555,7 +555,9 @@ function submit(){
                                <div className="text-center	">
                                     {
                                         (session == 'session')?
-                                        <div><h2 className="text-6xl font-medium text-red-600 m-5"> {minutos1 < 10 ? ("0" + minutos1).slice(-2) : minutos1}:{segundos1 < 10 ? ("0" + segundos1).slice(-2) : segundos1}</h2> </div>
+                                        <div><h2 className="text-6xl font-medium text-red-600 m-5"> {minutos1 < 10 ? ("0" + minutos1).slice(-2) : minutos1}:{segundos1 < 10 ? ("0" + segundos1).slice(-2) : segundos1}</h2> 
+                                        <span className="font-medium">Mantenha o foco!</span>
+                                        </div>
                                         : <div><h2 className="text-6xl font-medium text-green-500 m-5">{minutos1 < 10 ? ("0" + minutos1).slice(-2) : minutos1}:{segundos1 < 10 ? ("0" + segundos1).slice(-2) : segundos1}</h2> 
                                         <span>Tenha uma pausa agora</span>
                                         </div>
